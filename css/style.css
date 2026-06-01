@@ -47,7 +47,7 @@ position:fixed;
 top:95px;
 right:25px;
 
-width:420px;
+width:300px;
 
 padding:20px;
 
@@ -258,7 +258,7 @@ font-weight:700;
 .download-text{
 
 color:white;
-
+ 
 line-height:1.8;
 
 }
@@ -589,7 +589,17 @@ margin:120px auto;
 
 .terminal{
 
-padding:40px;
+padding:clamp(
+30px,      /* minimum */
+4vw,
+40px       /* maximum */
+);
+
+font-size:clamp(
+0.75rem,   /* 25% smaller */
+1.2vw,
+1rem       /* current size */
+);
 
 background:black;
 
@@ -598,6 +608,10 @@ border:1px solid var(--green);
 font-family:monospace;
 
 line-height:2;
+
+transition:
+padding .25s ease,
+font-size .25s ease;
 
 }
 
@@ -624,7 +638,14 @@ color:var(--green);
 
 .output{
 color:white;
-margin-left:18px;
+
+margin-left:clamp(
+12px,
+2vw,
+18px
+);
+
+transition:margin-left .25s ease;
 }
 
 .output a{
@@ -655,7 +676,13 @@ width:100%;
 } 
 .Gitlink a{
     color:white;
-    margin-left:18px;
+
+    margin-left:clamp(
+    12px,
+    2vw,
+    18px
+    );
+
     text-decoration:none;
 }
 .Gitlink a:hover{
@@ -724,6 +751,26 @@ scale(1.25);
 
 filter:
 drop-shadow(0 0 8px white);
+
+}
+
+@media (max-width: 900px){
+
+    body{
+        cursor:auto;
+    }
+
+    .matrix-cursor,
+    .cursor-glow{
+        display:none;
+    }
+
+    a,
+    button,
+    .btn,
+    .download-btn{
+        cursor:pointer;
+    }
 
 }
 

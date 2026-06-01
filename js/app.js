@@ -32,6 +32,23 @@ if(exploreBtn && projects){
 
 const glow = document.querySelector(".cursor-glow");
 const cursor = document.querySelector(".matrix-cursor");
+if(window.innerWidth > 900){
+
+    document.addEventListener("mousemove",(e)=>{
+
+        if(glow){
+            glow.style.left = e.clientX + "px";
+            glow.style.top = e.clientY + "px";
+        }
+
+        if(cursor){
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        }
+
+    });
+
+}
 
 document.addEventListener("mousemove", (e) => {
 
@@ -75,7 +92,6 @@ document.addEventListener("mouseout",(e)=>{
     }
 
 });
-
 });
 
 const musicToggle =
