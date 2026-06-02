@@ -143,6 +143,4 @@ To become a skilled AI/ML engineer and build intelligent software that helps bus
 
 ---
 
----
-
 > Building practical tools, learning continuously, and turning ideas into software.
