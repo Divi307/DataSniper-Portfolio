@@ -143,12 +143,6 @@ To become a skilled AI/ML engineer and build intelligent software that helps bus
 
 ---
 
-## 📊 GitHub Stats
-
-![Stats](https://github-readme-stats.vercel.app/api?username=Divi307&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Divi307&layout=compact&theme=tokyonight)
-
 ---
 
 > Building practical tools, learning continuously, and turning ideas into software.
