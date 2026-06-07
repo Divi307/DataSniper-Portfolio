@@ -43,7 +43,7 @@ Machine Learning • Computer Vision • AI Agents
 
 ## Micro Contour v1.4
 
-Contour Mini is a survey-data processing tool designed to generate smooth contours and detailed grids from manually corrected DXF files.
+Micro Contour is a survey-data processing tool designed to generate smooth contours and detailed grids from manually corrected DXF files.
 
 ### Features
 
